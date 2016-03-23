@@ -35,6 +35,9 @@ buildNumber.properties
 # Sensitive or high-churn files:
 .idea/dataSources.ids
 .idea/dataSources.xml
+
+# Staruml files
+*.mdj
 .idea/dataSources.local.xml
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
