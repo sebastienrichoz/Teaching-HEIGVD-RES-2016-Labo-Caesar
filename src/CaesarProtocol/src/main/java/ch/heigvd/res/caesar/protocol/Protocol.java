@@ -45,14 +45,6 @@ public class Protocol {
         byte[] encodedMessage = new byte[encodedMessageLength + 5];
 
         encodedMessage[0] = offset;
-
-//        for(int i = 1; i < 5; i++) {
-//            encodedMessage[i] = messageLength[i-1];
-//        }
-
-//        for (int i = 5; i < encodedMessage.length+5; i++) {
-//            encodedMessage[i] = (byte) (messageBytes[i - 5] + offset);
-//        }
         for(int i = 0; i< messageBytes.length; i++) {
             messageBytes[i] += offset;
         }
